@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Watch Series 11</title>
+  <meta name="description" content="Introducing Apple Watch Series 11 with titanium design, advanced health insights, materials outsourcing, parts shipping supply chain, and interactive 3D product showcase." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Centered Floating Bubble Glass Navigation -->
+  <header class="bubble-nav-wrapper" id="navbar">
+    <nav class="bubble-nav" id="bubbleNav" aria-label="Main Navigation">
+      <a href="#home" class="bubble-logo" id="nav-logo" title="Apple Watch Series 11">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="logo-text">Series 11</span>
+      </a>
+
+      <div class="bubble-divider" aria-hidden="true"></div>
+
+      <!-- Desktop Links -->
+      <div class="bubble-links" id="navLinks">
+        <a href="#home" class="bubble-link active" data-nav id="nav-home">Home</a>
+        <a href="#brand" class="bubble-link" data-nav id="nav-brand">Brand</a>
+        <a href="#product" class="bubble-link" data-nav id="nav-product">Product</a>
+        <a href="#materials-origin" class="bubble-link" data-nav id="nav-materials">Materials</a>
+        <a href="#assembly-shipping" class="bubble-link" data-nav id="nav-shipping">Shipping</a>
+        <a href="#manufacturing" class="bubble-link" data-nav id="nav-mfg">Manufacturing</a>
+        <a href="#distribution" class="bubble-link" data-nav id="nav-dist">Distribution</a>
+        <a href="#about" class="bubble-link" data-nav id="nav-about">About Us</a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button (Glass Pill) -->
+      <button class="bubble-mobile-toggle" id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="mobile-toggle-label" id="mobileActiveLabel">Home</span>
+        <span class="hamburger-icon" aria-hidden="true">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-bottom"></span>
+        </span>
+      </button>
+    </nav>
+
+    <!-- Mobile Glass Dropdown Menu -->
+    <div class="bubble-mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="#home" class="mobile-nav-link active" data-nav id="mob-nav-home">
+          <span>Home</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#brand" class="mobile-nav-link" data-nav id="mob-nav-brand">
+          <span>Brand</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#product" class="mobile-nav-link" data-nav id="mob-nav-product">
+          <span>Product</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#materials-origin" class="mobile-nav-link" data-nav id="mob-nav-materials">
+          <span>Materials</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#assembly-shipping" class="mobile-nav-link" data-nav id="mob-nav-shipping">
+          <span>Shipping</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#manufacturing" class="mobile-nav-link" data-nav id="mob-nav-mfg">
+          <span>Manufacturing</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#distribution" class="mobile-nav-link" data-nav id="mob-nav-dist">
+          <span>Distribution</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#about" class="mobile-nav-link" data-nav id="mob-nav-about">
+          <span>About Us</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <!-- Text Column -->
+        <div class="hero-text">
+          <p class="hero-tag" id="heroTag">
+            <span class="tag-dot"></span>
+            Introducing Series 11
+          </p>
+
+          <h1 class="hero-title">
+            Apple
+            <span class="hero-title-sub">on your wrist, redefined.</span>
+          </h1>
+
+          <p class="hero-desc">
+            A titanium body shaped by air and light. A display that stays
+            bright at any angle. Health insight that runs quietly in the
+            background of every day &mdash; so you can stay focused on
+            living it.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#brand" class="hero-btn" id="heroBtn">
+              <span>Get to Know More</span>
+              <svg class="hero-btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Subtle Specs Bar -->
+          <div class="hero-specs" id="heroSpecs">
+            <div class="spec-item">
+              <span class="spec-label">Thickness</span>
+              <span class="spec-val">9.7 mm</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-label">Case</span>
+              <span class="spec-val">Grade 5 Titanium</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-label">Battery</span>
+              <span class="spec-val">Up to 24 hrs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Watch Showcase Column -->
+        <div class="hero-visual">
+          <div class="watch-stage" id="watchStage" aria-label="Interactive 3D Apple Watch Series 11">
+            <!-- WebGL 3D Canvas -->
+            <canvas id="watchCanvas" class="watch-webgl-canvas"></canvas>
+
+            <!-- Floating Product Badges -->
+            <div class="watch-badge badge-top-left" id="watchBadgeLeft">
+              <span class="badge-pulse"></span>
+              <span>Series 11 &bull; 46mm</span>
+            </div>
+
+            <div class="watch-badge badge-top-right" id="watchBadgeRight">
+              <span class="badge-icon">✦</span>
+              <span>Wide-Angle OLED</span>
+            </div>
+
+            <!-- Interaction Hints & Controls -->
+            <div class="watch-stage-controls">
+              <button class="stage-control-btn" id="toggleRotateBtn" title="Toggle 360 Free Rotation">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                </svg>
+                <span id="rotateBtnLabel">Drag to Rotate 360°</span>
+              </button>
+
+              <button class="stage-control-btn reset-btn" id="resetOrientationBtn" title="Reset Watch Angle">
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <!-- Finish Customizer Bar below 3D Watch -->
+          <div class="watch-customizer-bar" id="customizerBar">
+            <div class="customizer-group">
+              <span class="customizer-label">Finish:</span>
+              <div class="finish-swatches" id="finishSwatches">
+                <button class="finish-swatch active" data-finish="natural" style="--swatch-color: #d6d4cf;" title="Natural Titanium" aria-label="Natural Titanium finish"></button>
+                <button class="finish-swatch" data-finish="jetblack" style="--swatch-color: #17171a;" title="Jet Black" aria-label="Jet Black finish"></button>
+                <button class="finish-swatch" data-finish="slate" style="--swatch-color: #4a4b52;" title="Space Slate" aria-label="Space Slate finish"></button>
+                <button class="finish-swatch" data-finish="gold" style="--swatch-color: #d6b896;" title="Gold Titanium" aria-label="Gold Titanium finish"></button>
+              </div>
+              <span class="finish-name" id="activeFinishName">Natural Titanium</span>
+            </div>
+
+            <div class="customizer-divider"></div>
+
+            <div class="customizer-group">
+              <span class="customizer-label">Band:</span>
+              <div class="band-swatches" id="bandSwatches">
+                <button class="band-swatch active" data-band="midnight" style="--band-color: #1a1a22;" title="Midnight" aria-label="Midnight band"></button>
+                <button class="band-swatch" data-band="desert" style="--band-color: #928b80;" title="Desert Stone" aria-label="Desert Stone band"></button>
+                <button class="band-swatch" data-band="navy" style="--band-color: #1a273b;" title="Deep Navy" aria-label="Deep Navy band"></button>
+                <button class="band-swatch" data-band="chalk" style="--band-color: #e5e5ea;" title="Chalk White" aria-label="Chalk White band"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand / Apple Inc. Section -->
+    <section class="section brand-section" id="brand">
+      <div class="section-inner">
+        <!-- 1. Short Introduction -->
+        <div class="brand-intro brand-reveal" id="brandIntro">
+          <div class="brand-badge">
+            <svg class="apple-vector-icon" viewBox="0 0 170 170" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.58-7.7-11.64-13.99-5.99-9.35-10.72-19.81-14.19-31.39-3.48-11.58-5.22-22.62-5.22-33.12 0-14.68 3.59-26.68 10.76-36.01 7.18-9.33 16.27-14.07 27.27-14.23 4.9 0 10.4 1.25 16.5 3.76 6.1 2.5 10.02 3.82 11.75 3.94 1.73-.12 5.92-1.5 12.57-4.14 6.65-2.64 12.35-3.8 17.1-3.48 12.3.64 22.38 4.9 30.24 12.78-9.79 5.86-14.61 14.28-14.47 25.26.13 8.35 3.28 15.38 9.45 21.09 6.17 5.71 13.56 9.06 22.18 10.05-2.29 7.07-5.07 14.14-8.35 21.2zm-28.77-104.9c0-6.96 2.47-13.43 7.41-19.41 4.94-5.99 11.14-9.8 18.6-11.44.82 7.07-1.42 13.62-6.72 19.64-5.3 6.03-11.73 9.77-19.29 11.21z"/>
+            </svg>
+            <span>Company &amp; Legacy</span>
+          </div>
+          <h2 class="brand-hero-title">Apple</h2>
+          <p class="brand-hero-desc">
+            Apple Inc. is a global technology company renowned for creating transformative hardware, intuitive software, and everyday services. From creating the modern personal computer with the Mac to redefining mobile technology with the iPhone, iPad, and Apple Watch, Apple innovates to enrich human potential and creativity.
+          </p>
+        </div>
+
+        <!-- 2. Company Information Panels -->
+        <div class="brand-block brand-reveal" id="brandCompanyInfo">
+          <div class="brand-block-header">
+            <span class="block-eyebrow">Corporate Profile</span>
+            <h3 class="block-title">Company Information</h3>
+            <p class="block-subtitle">Key corporate details and Apple's global multinational presence.</p>
+          </div>
+
+          <div class="company-info-grid">
+            <!-- Card 1: Company Name -->
+            <div class="glass-card company-card" id="infoCompanyName" style="--card-index: 0;">
+              <div class="card-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18M3 7v14M21 7v14M6 11h4M6 15h4M14 11h4M14 15h4M9 3h6a2 2 0 0 1 2 2v2H7V5a2 2 0 0 1 2-2z"/>
+                </svg>
+              </div>
+              <div class="card-meta">
+                <span class="card-label">Company Name</span>
+                <span class="card-value">Apple Inc.</span>
+                <span class="card-subtext">Founded as Apple Computer Company</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Founded -->
+            <div class="glass-card company-card" id="infoFounded" style="--card-index: 1;">
+              <div class="card-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="card-meta">
+                <span class="card-label">Founded</span>
+                <span class="card-value">1976</span>
+                <span class="card-subtext">April 1, 1976 &bull; Los Altos, California</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Headquarters -->
+            <div class="glass-card company-card" id="infoHq" style="--card-index: 2;">
+              <div class="card-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="card-meta">
+                <span class="card-label">Headquarters</span>
+                <span class="card-value">Cupertino, California, USA</span>
+                <span class="card-subtext">One Apple Park Way &bull; Silicon Valley</span>
+              </div>
+            </div>
+
+            <!-- Card 4: Industry -->
+            <div class="glass-card company-card" id="infoIndustry" style="--card-index: 3;">
+              <div class="card-icon-bubble">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <div class="card-meta">
+                <span class="card-label">Industry</span>
+                <span class="card-value">Technology</span>
+                <span class="card-subtext">Consumer Electronics, Software &amp; Digital Services</span>
+              </div>
+            </div>
+
+            <!-- Card 5: Type of Corporation (Multinational Corporation - MNC) Spanning full width -->
+            <div class="glass-card company-card mnc-card span-full" id="infoType" style="--card-index: 4;">
+              <div class="mnc-card-header">
+                <div class="card-icon-bubble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-label">Type of Corporation</span>
+                  <div class="mnc-value-row">
+                    <span class="card-value">Multinational Corporation (MNC)</span>
+                    <span class="mnc-badge">Global Scale</span>
+                  </div>
+                  <span class="card-subtext">Operating across international markets with global supply chains</span>
+                </div>
+              </div>
+
+              <!-- Explanation Area for Why Apple is an MNC -->
+              <div class="mnc-explanation-panel" id="mncExplanationPanel">
+                <div class="mnc-expl-header">
+                  <h4 class="mnc-expl-title">Why is Apple classified as a multinational corporation?</h4>
+                  <button type="button" class="mnc-toggle-btn" id="mncToggleBtn" aria-expanded="true" aria-controls="mncCollapsibleContent">
+                    <span id="mncToggleLabel">Collapse</span>
+                    <svg class="mnc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="18 15 12 9 6 15"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="mnc-collapsible" id="mncCollapsibleContent">
+                  <p class="mnc-expl-text">
+                    Apple Inc. is classified as a multinational corporation because it is headquartered in the United States while conducting business and generating sales across many countries and regions worldwide. Apple has a global market presence, with sales outside the United States accounting for the majority of its total net sales. Its operations cover major regions such as the Americas, Europe, Greater China, Japan, and the rest of Asia Pacific. Apple also relies on a global supply chain, with much of its manufacturing performed by outsourcing partners in countries including China, India, Japan, South Korea, Taiwan, and Vietnam.
+                  </p>
+
+                  <div class="mnc-key-segments">
+                    <div class="mnc-segment-group">
+                      <span class="mnc-segment-label">Reportable Geographic Segments (Form 10-K):</span>
+                      <div class="mnc-pills">
+                        <span class="mnc-tag">Americas</span>
+                        <span class="mnc-tag">Europe</span>
+                        <span class="mnc-tag">Greater China</span>
+                        <span class="mnc-tag">Japan</span>
+                        <span class="mnc-tag">Rest of Asia Pacific</span>
+                      </div>
+                    </div>
+
+                    <div class="mnc-segment-group">
+                      <span class="mnc-segment-label">Global Manufacturing &amp; Outsourcing Hubs:</span>
+                      <div class="mnc-pills">
+                        <span class="mnc-tag">China mainland</span>
+                        <span class="mnc-tag">India</span>
+                        <span class="mnc-tag">Japan</span>
+                        <span class="mnc-tag">South Korea</span>
+                        <span class="mnc-tag">Taiwan</span>
+                        <span class="mnc-tag">Vietnam</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Main Products (Spanning Full Width with Responsive Selection & Hovering) -->
+            <div class="glass-card company-card products-card span-full" id="infoProducts" style="--card-index: 5;">
+              <div class="products-card-header">
+                <div class="card-icon-bubble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-label">Main Products</span>
+                  <span class="card-value">Product Ecosystem</span>
+                  <span class="card-subtext">Click or hover any product to explore its role in the Apple ecosystem</span>
+                </div>
+              </div>
+
+              <!-- Interactive Product Selection Buttons -->
+              <div class="product-pills-list" id="productPillsList" role="tablist" aria-label="Apple Main Products">
+                <button type="button" class="product-pill active" data-product="watch" role="tab" aria-selected="true" id="tab-watch">
+                  <span class="pill-dot"></span>
+                  <span>Apple Watch</span>
+                </button>
+                <button type="button" class="product-pill" data-product="iphone" role="tab" aria-selected="false" id="tab-iphone">
+                  <span>iPhone</span>
+                </button>
+                <button type="button" class="product-pill" data-product="mac" role="tab" aria-selected="false" id="tab-mac">
+                  <span>Mac</span>
+                </button>
+                <button type="button" class="product-pill" data-product="ipad" role="tab" aria-selected="false" id="tab-ipad">
+                  <span>iPad</span>
+                </button>
+                <button type="button" class="product-pill" data-product="airpods" role="tab" aria-selected="false" id="tab-airpods">
+                  <span>AirPods</span>
+                </button>
+                <button type="button" class="product-pill" data-product="vision" role="tab" aria-selected="false" id="tab-vision">
+                  <span>Apple Vision Pro</span>
+                </button>
+                <button type="button" class="product-pill" data-product="services" role="tab" aria-selected="false" id="tab-services">
+                  <span>Services</span>
+                </button>
+                <button type="button" class="product-pill" data-product="more" role="tab" aria-selected="false" id="tab-more">
+                  <span>and more</span>
+                </button>
+              </div>
+
+              <!-- Dynamic Product Detail Preview Strip -->
+              <div class="product-detail-preview" id="productDetailPreview">
+                <div class="preview-badge" id="previewBadge">Flagship Wearable</div>
+                <div class="preview-content">
+                  <strong class="preview-title" id="previewTitle">Apple Watch</strong>
+                  <span class="preview-separator">&bull;</span>
+                  <p class="preview-desc" id="previewDesc">
+                    The world's leading smartwatch combining aerospace-grade titanium, edge-to-edge wide-angle OLED, precision ECG, and life-saving health sensors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Headquarters: Apple Park Showcase -->
+        <div class="brand-block brand-reveal" id="brandHqSection">
+          <div class="hq-card-container">
+            <div class="hq-text-column">
+              <span class="block-eyebrow">Corporate Headquarters</span>
+              <h3 class="hq-title">Apple Park</h3>
+              <div class="hq-address-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Cupertino, California &bull; One Apple Park Way</span>
+              </div>
+              <p class="hq-description">
+                Conceived by Steve Jobs as a vibrant hub for creativity and collaboration, Apple Park serves as Apple's corporate world headquarters. Centered around "The Ring" — a colossal 2.8 million square-foot circular building clad in the world's largest curved structural glass panes — the campus is powered entirely by 100% renewable energy, featuring an expansive rooftop solar microgrid and over 9,000 native California drought-tolerant trees.
+              </p>
+
+              <div class="hq-stats-grid">
+                <div class="hq-stat-item">
+                  <span class="hq-stat-val">2.8M</span>
+                  <span class="hq-stat-label">sq. ft. Ring</span>
+                </div>
+                <div class="hq-stat-item">
+                  <span class="hq-stat-val">100%</span>
+                  <span class="hq-stat-label">Renewable Energy</span>
+                </div>
+                <div class="hq-stat-item">
+                  <span class="hq-stat-val">9,000+</span>
+                  <span class="hq-stat-label">Native Trees</span>
+                </div>
+                <div class="hq-stat-item">
+                  <span class="hq-stat-val">Cupertino</span>
+                  <span class="hq-stat-label">California, USA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hq-visual-column">
+              <div class="hq-image-frame" id="hqImageFrame">
+                <img
+                  src="./apple_park.jpg"
+                  alt="Aerial twilight view of Apple Park circular ring headquarters in Cupertino California"
+                  class="hq-hero-image"
+                  id="hqHeroImage"
+                  referrerPolicy="no-referrer"
+                />
+                <div class="hq-image-gradient" aria-hidden="true"></div>
+                <div class="hq-image-badge">
+                  <span class="hq-pulse-dot" aria-hidden="true"></span>
+                  <span>Apple Park &bull; Cupertino, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Apple Facts ("Did You Know?") -->
+        <div class="brand-block brand-reveal" id="brandFactsSection">
+          <div class="brand-block-header">
+            <span class="block-eyebrow">Did You Know?</span>
+            <h3 class="block-title">Apple Facts</h3>
+            <p class="block-subtitle">Milestones and stories that define the spirit of Apple innovation.</p>
+          </div>
+
+          <div class="facts-grid">
+            <!-- Fact 1: History and Founding -->
+            <div class="glass-card fact-card" id="factFounding" style="--card-index: 0;">
+              <div class="fact-top">
+                <span class="fact-badge">1976</span>
+                <span class="fact-tag">Founding</span>
+              </div>
+              <h4 class="fact-heading">Garage Beginnings</h4>
+              <p class="fact-body">
+                Founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne in Jobs' family home garage in Los Altos, California, introducing the hand-crafted Apple I computer.
+              </p>
+            </div>
+
+            <!-- Fact 2: Macintosh Milestone -->
+            <div class="glass-card fact-card" id="factMacintosh" style="--card-index: 1;">
+              <div class="fact-top">
+                <span class="fact-badge">1984</span>
+                <span class="fact-tag">Computing</span>
+              </div>
+              <h4 class="fact-heading">The Macintosh GUI</h4>
+              <p class="fact-body">
+                In 1984, Apple pioneered mass-market personal computing with the Macintosh, popularizing graphical user interfaces, windowed applications, and the computer mouse.
+              </p>
+            </div>
+
+            <!-- Fact 3: Major Products -->
+            <div class="glass-card fact-card" id="factIpod" style="--card-index: 2;">
+              <div class="fact-top">
+                <span class="fact-badge">2001</span>
+                <span class="fact-tag">Digital Music</span>
+              </div>
+              <h4 class="fact-heading">1,000 Songs in Your Pocket</h4>
+              <p class="fact-body">
+                The introduction of the original iPod and iTunes in 2001 transformed digital media consumption, paving the way for the mobile music and streaming era.
+              </p>
+            </div>
+
+            <!-- Fact 4: iPhone Revolution -->
+            <div class="glass-card fact-card" id="factIphone" style="--card-index: 3;">
+              <div class="fact-top">
+                <span class="fact-badge">2007</span>
+                <span class="fact-tag">Mobile Breakthrough</span>
+              </div>
+              <h4 class="fact-heading">The Smartphone Standard</h4>
+              <p class="fact-body">
+                Steve Jobs unveiled the iPhone in 2007 as three revolutionary products in one device — a widescreen iPod, a mobile phone, and a breakthrough internet communicator.
+              </p>
+            </div>
+
+            <!-- Fact 5: The Apple Watch -->
+            <div class="glass-card fact-card" id="factWatch" style="--card-index: 4;">
+              <div class="fact-top">
+                <span class="fact-badge">2014</span>
+                <span class="fact-tag">Health &amp; Horology</span>
+              </div>
+              <h4 class="fact-heading">The Apple Watch</h4>
+              <p class="fact-body">
+                Unveiled in 2014, the Apple Watch evolved into the world's most popular watch, saving countless lives through proactive ECG, Fall Detection, and Sleep Apnea notifications.
+              </p>
+            </div>
+
+            <!-- Fact 6: Apple Park Architecture -->
+            <div class="glass-card fact-card" id="factArchitecture" style="--card-index: 5;">
+              <div class="fact-top">
+                <span class="fact-badge">Architecture</span>
+                <span class="fact-tag">Sustainability</span>
+              </div>
+              <h4 class="fact-heading">Curved Glass Marvel</h4>
+              <p class="fact-body">
+                Apple Park's Ring building features over 3,000 custom curved glass panes spanning up to 47 feet long, cooled naturally through innovative natural ventilation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Features & Exploded Architecture Section -->
+    <section class="section product-section" id="product">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header product-header">
+          <p class="section-tag">Internal Architecture &amp; Materials</p>
+          <h2 class="section-title">Precision down to the micron.</h2>
+          <p class="section-desc">
+            Series 11 deconstructs conventional wearable engineering. Discover how aerospace-grade Grade 5 titanium, sapphire crystal, and custom Apple Silicon fit into our thinnest, most powerful enclosure yet.
+          </p>
+        </div>
+
+        <!-- 3D Exploded Showcase Interactive Laboratory -->
+        <div class="exploded-showcase-container" id="explodedShowcase">
+          <!-- Main 3D Canvas Stage -->
+          <div class="exploded-stage" id="explodedStage" aria-label="Interactive 3D Apple Watch Series 11 Exploded View">
+            <!-- Stage Top Bar / Status & Quick Controls -->
+            <div class="exploded-stage-topbar">
+              <div class="exploded-status-pill" id="explodedStatusPill">
+                <span class="status-indicator-dot" id="explodedStatusDot"></span>
+                <span class="status-indicator-label" id="explodedStatusText">Complete Assembly · Solid Product</span>
+              </div>
+              <div class="exploded-stage-tools">
+                <button type="button" class="stage-tool-btn" id="resetExplodedCamBtn" title="Reset 3D camera angle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                    <path d="M3 3v5h5"/>
+                  </svg>
+                  <span>Reset Angle</span>
+                </button>
+                <div class="stage-rotation-hint" id="stageDragHint">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M16 12l-4-4-4 4"/>
+                    <path d="M12 16V8"/>
+                  </svg>
+                  <span>Drag to rotate in 3D</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- WebGL Canvas for Series 11 Exploded View -->
+            <canvas id="explodedCanvas" class="exploded-canvas" aria-hidden="true"></canvas>
+
+            <!-- 3D Hotspot Overlays (Positioned dynamically in 3D space) -->
+            <div class="hotspots-overlay" id="explodedHotspots" aria-hidden="true"></div>
+
+            <!-- Bottom Floating Action Control Bar -->
+            <div class="exploded-stage-controls">
+              <button type="button" class="exploded-main-cta" id="explodeTriggerBtn" aria-pressed="false">
+                <span class="cta-icon-wrapper" id="explodeIconWrapper">
+                  <svg class="icon-explode" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                  </svg>
+                  <svg class="icon-reassemble" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <rect x="3" y="3" width="18" height="18" rx="4"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </span>
+                <span class="cta-label" id="explodeBtnLabel">Explore Components</span>
+                <span class="cta-badge" id="explodeBtnBadge">12 Systems</span>
+              </button>
+
+              <div class="stage-interact-tip" id="stageTip">
+                Click "Explore Components" to separate the watch into its precision parts.
+              </div>
+            </div>
+          </div>
+
+          <!-- Component Information & Inspection HUD Card -->
+          <div class="component-hud-card" id="componentInspector">
+            <!-- HUD Header -->
+            <div class="hud-header">
+              <div class="hud-meta-row">
+                <span class="hud-category-badge" id="inspCategoryBadge">Metals &amp; Ceramics</span>
+                <span class="hud-layer-tag" id="inspLayerTag">Layer 01 of 12</span>
+              </div>
+              <h3 class="hud-title" id="inspTitle">Front Sapphire Crystal Glass</h3>
+              <p class="hud-subtitle" id="inspSubtitle">Curved Display Boundary &amp; Surface Shield</p>
+            </div>
+
+            <!-- Component Selector Horizontal Rail -->
+            <div class="hud-selector-section">
+              <span class="selector-label">Select Component to Inspect:</span>
+              <div class="hud-parts-rail" id="partsRail" role="tablist" aria-label="Apple Watch Components">
+                <!-- Injected via JavaScript dynamically -->
+              </div>
+            </div>
+
+            <!-- Structured Deep-Dive Information -->
+            <div class="hud-details-body">
+              <div class="hud-info-block" id="hudBlockWhat">
+                <span class="info-block-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                  </svg>
+                  What It Is
+                </span>
+                <p class="info-block-text" id="inspWhat">
+                  A custom precision-formed diamond-polished sapphire crystal lens, engineered with atomic-scale curvature that cascades seamlessly into the titanium midframe.
+                </p>
+              </div>
+
+              <div class="hud-info-block" id="hudBlockFunction">
+                <span class="info-block-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                  What It Does
+                </span>
+                <p class="info-block-text" id="inspFunction">
+                  Guards the LTPO OLED display with Mohs-9 scratch resistance, while custom anti-reflective vacuum coatings maximize optical clarity even under direct harsh sunlight.
+                </p>
+              </div>
+
+              <div class="hud-info-block" id="hudBlockRole">
+                <span class="info-block-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                  Role in Series 11
+                </span>
+                <p class="info-block-text" id="inspRole">
+                  Enables edge-to-edge glanceability at extreme viewing angles while maintaining 50-meter ISO water resistance and extreme durability during high-impact sports.
+                </p>
+              </div>
+            </div>
+
+            <!-- Material & Engineering Metrics Footprint -->
+            <div class="hud-specs-bar">
+              <div class="hud-spec-item">
+                <span class="spec-label">Primary Material</span>
+                <span class="spec-value" id="inspMaterial">Pure Sapphire Crystal (Al₂O₃)</span>
+              </div>
+              <div class="hud-spec-item">
+                <span class="spec-label">Key Property</span>
+                <span class="spec-value" id="inspProperty">Mohs 9 Hardness</span>
+              </div>
+              <div class="hud-spec-item">
+                <span class="spec-label">Micron Precision</span>
+                <span class="spec-value spec-precision" id="inspPrecision">±0.5 µm CNC Atomic Polish</span>
+              </div>
+              <div class="hud-spec-item">
+                <span class="spec-label">Assembly Axis</span>
+                <span class="spec-value" id="inspAxis">Front Face (+Z Vector)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Materials Classification Blueprint Legend -->
+        <div class="materials-blueprint-bar" id="materialsBlueprint">
+          <div class="blueprint-intro">
+            <span class="blueprint-tag">Material Science</span>
+            <h4 class="blueprint-title">Raw Materials &amp; Sustainable Metallurgy</h4>
+            <p class="blueprint-caption">
+              Every element in Apple Watch Series 11 is selected for extreme strength-to-weight ratios, electrical conductivity, and minimal environmental footprint.
+            </p>
+          </div>
+          <div class="materials-legend-grid">
+            <div class="legend-card legend-metals" id="legendMetals" data-category="metals" role="button" tabindex="0" title="Inspect titanium chassis">
+              <div class="legend-header">
+                <span class="legend-swatch swatch-metals"></span>
+                <span class="legend-cat-title">Metals</span>
+              </div>
+              <ul class="legend-items">
+                <li><strong>Titanium:</strong> Grade 5 aerospace chassis &amp; crown</li>
+                <li><strong>Stainless Steel:</strong> Taptic housing &amp; screws (316L)</li>
+                <li><strong>Copper &amp; Gold:</strong> Inductive coil &amp; SiP bonding</li>
+              </ul>
+            </div>
+
+            <div class="legend-card legend-ceramics" id="legendCeramics" data-category="ceramics" role="button" tabindex="0" title="Inspect sapphire crystal">
+              <div class="legend-header">
+                <span class="legend-swatch swatch-ceramics"></span>
+                <span class="legend-cat-title">Ceramics &amp; Glass</span>
+              </div>
+              <ul class="legend-items">
+                <li><strong>Sapphire Crystal:</strong> Front lens &amp; optical windows</li>
+                <li><strong>Zirconia Ceramic:</strong> Biocompatible back plate</li>
+                <li><strong>Ion-X / Display Glass:</strong> Thin-film OLED substrate</li>
+              </ul>
+            </div>
+
+            <div class="legend-card legend-semiconductors" id="legendSemiconductors" data-category="semiconductors" role="button" tabindex="0" title="Inspect S11 SiP processor">
+              <div class="legend-header">
+                <span class="legend-swatch swatch-semiconductors"></span>
+                <span class="legend-cat-title">Semiconductors &amp; SiP</span>
+              </div>
+              <ul class="legend-items">
+                <li><strong>Silicon:</strong> 64-bit S11 CPU &amp; 4-core NPU</li>
+                <li><strong>GaAs LEDs:</strong> Optical heart &amp; SpO₂ pulse diodes</li>
+                <li><strong>Indium Tin Oxide:</strong> Transparent touch capacitive grid</li>
+              </ul>
+            </div>
+
+            <div class="legend-card legend-polymers" id="legendPolymers" data-category="polymers" role="button" tabindex="0" title="Inspect thermal shield">
+              <div class="legend-header">
+                <span class="legend-swatch swatch-polymers"></span>
+                <span class="legend-cat-title">Plastics &amp; Polymers</span>
+              </div>
+              <ul class="legend-items">
+                <li><strong>Polyimide (PI):</strong> High-density multi-layer flex circuits</li>
+                <li><strong>Silicone Rubber:</strong> Hydrophobic case gaskets</li>
+                <li><strong>Fluoroelastomer:</strong> Ultra-resilient sport band</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Feature Highlight Cards (Refined & Connected) -->
+        <div class="features-grid product-features-bottom">
+          <div class="feature-card" id="featWideOled">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Wide-Angle OLED Display</h3>
+            <p class="feature-text">
+              Each sub-pixel is individually calibrated to emit light across a wider arc, delivering vibrant glanceable readability at steep wrist angles with up to 2,000 nits.
+            </p>
+          </div>
+
+          <div class="feature-card" id="featTitanium">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Grade 5 Polished Titanium</h3>
+            <p class="feature-text">
+              Precision-milled titanium case provides near-indestructible tensile strength while reducing chassis weight by almost 10% compared to previous generations.
+            </p>
+          </div>
+
+          <div class="feature-card" id="featS11Chip">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="14" x2="4" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="feature-heading">S11 SiP Architecture</h3>
+            <p class="feature-text">
+              A 4-core Neural Engine processes on-device intelligence with whisper-quiet efficiency, enabling proactive health alerts and instant Siri responses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: Origin and Outsourcing of Materials -->
+    <section class="section materials-origin-section" id="materials-origin">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag">Traceability &amp; Responsible Supply Chain</p>
+          <h2 class="section-title">Origin &amp; Outsourcing of Materials</h2>
+          <p class="section-desc">
+            Apple Watch Series 11 represents a breakthrough in both microscopic manufacturing precision and global material ethics. Here is an authentic look at the origins of raw materials and the verified Tier-1 manufacturing locations that shape each component.
+          </p>
+        </div>
+
+        <!-- Interactive Perspective Mode Switcher & Category Filter -->
+        <div class="origin-control-bar" id="originControlBar">
+          <div class="origin-mode-pills" role="tablist" aria-label="View Perspective">
+            <button type="button" class="origin-mode-btn active" id="btnModeAll" data-mode="all" role="tab" aria-selected="true">
+              <span class="mode-dot"></span>
+              <span>Complete View</span>
+            </button>
+            <button type="button" class="origin-mode-btn" id="btnModeSourcing" data-mode="sourcing" role="tab" aria-selected="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                <path d="M2 12h20"/>
+              </svg>
+              <span>Focus: Material Sourcing</span>
+            </button>
+            <button type="button" class="origin-mode-btn" id="btnModeManufacturing" data-mode="manufacturing" role="tab" aria-selected="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span>Focus: Component Manufacturing</span>
+            </button>
+          </div>
+
+          <div class="origin-filter-pills" id="originCategoryFilters" role="tablist" aria-label="Filter by Component Category">
+            <button type="button" class="cat-filter-btn active" data-cat="all">All Components</button>
+            <button type="button" class="cat-filter-btn" data-cat="enclosure">Enclosure &amp; Crystal</button>
+            <button type="button" class="cat-filter-btn" data-cat="silicon">Silicon &amp; Display</button>
+            <button type="button" class="cat-filter-btn" data-cat="power">Battery &amp; Sensors</button>
+          </div>
+        </div>
+
+        <!-- Distinction Explainer Banner -->
+        <div class="origin-distinction-banner" id="originDistinctionBanner">
+          <div class="distinction-item">
+            <span class="distinction-badge badge-sourcing">
+              <span class="distinction-indicator dot-sourcing"></span>
+              Material Sourcing
+            </span>
+            <p class="distinction-text">
+              Refers to where raw elements (titanium, cobalt, gold, silicon, synthetic alumina) are extracted, smelted, or reclaimed through 100% certified recycling facilities audited under strict OECD Due Diligence standards.
+            </p>
+          </div>
+          <div class="distinction-divider" aria-hidden="true"></div>
+          <div class="distinction-item">
+            <span class="distinction-badge badge-manufacturing">
+              <span class="distinction-indicator dot-manufacturing"></span>
+              Component Manufacturing
+            </span>
+            <p class="distinction-text">
+              Refers to the specialized engineering facilities and Tier-1 contract manufacturers where raw ingots, boules, and wafers are fabricated into finished micro-components (CNC machining, 3nm lithography, and SMT packaging).
+            </p>
+          </div>
+        </div>
+
+        <!-- Comprehensive Origin Matrix Cards Grid -->
+        <div class="origin-matrix-grid" id="originMatrixGrid">
+
+          <!-- Card 1: Grade 5 Titanium Case -->
+          <article class="origin-card" data-category="enclosure" id="origCardTitanium">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Enclosure</span>
+                <h3 class="origin-comp-title">Grade 5 Titanium Case &amp; Digital Crown</h3>
+              </div>
+              <span class="origin-recycled-pill">Recycled Titanium Stream</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Aerospace Grade 5 Titanium Alloy (Ti-6Al-4V: 90% Titanium, 6% Aluminum, 4% Vanadium), incorporating certified 100% recycled titanium scrap.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Column A: Material Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Japan &bull; United States &bull; Global Scrap</strong>
+                  <p class="origin-geo-desc">
+                    High-purity titanium sponge is smelted and vacuum arc remelted (VAR) by audited refiners in Japan (Toho Titanium, Osaka Titanium Technologies) alongside certified aerospace scrap reclamation facilities in North America.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Column B: Component Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Shenzhen &amp; Zhengzhou, China &bull; Foxconn</strong>
+                  <p class="origin-geo-desc">
+                    Forged, high-speed 5-axis CNC-machined, laser-etched, and hand-polished by Hon Hai Precision Industry (Foxconn) in Shenzhen and Zhengzhou, China. Internal antenna integration and vapor-deposition color finishing are executed in Class-1000 cleanrooms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Sapphire Crystal Lens & Zirconia Back -->
+          <article class="origin-card" data-category="enclosure" id="origCardSapphire">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Cover &amp; Back</span>
+                <h3 class="origin-comp-title">Front Sapphire Crystal &amp; Zirconia Ceramic Back</h3>
+              </div>
+              <span class="origin-recycled-pill">Optical Grade Purity</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Monocrystalline Synthetic Sapphire (Al₂O₃ &bull; Mohs 9 hardness), high-purity Zirconium Oxide (ZrO₂) ceramic powders, and anti-reflective fluoropolymer vacuum thin-films.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Switzerland &bull; Japan &bull; Australia</strong>
+                  <p class="origin-geo-desc">
+                    Optical-grade alumina seed crystals and precursor powders refined in specialized synthetic crystal labs in Switzerland and Japan. Zircon sand refined and chemical-purified in Western Australia and Japan.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Hunan &amp; Guangdong, China &bull; Lens Tech &amp; Biel</strong>
+                  <p class="origin-geo-desc">
+                    Kyropoulos crystal boule growth, diamond-wire slicing, CNC edge profiling, atomic chemical mechanical polishing (CMP), and oleophobic vacuum coating performed by Lens Technology (Changsha, Hunan) and Biel Crystal (Huizhou/Shenzhen, Guangdong).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Wide-Angle LTPO3 OLED Display -->
+          <article class="origin-card" data-category="silicon" id="origCardDisplay">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Display</span>
+                <h3 class="origin-comp-title">Wide-Angle LTPO3 OLED Display Module</h3>
+              </div>
+              <span class="origin-recycled-pill">1Hz to 60Hz Variable</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Low-Temperature Polycrystalline Oxide (LTPO) thin-film transistors, organic electroluminescent emitting stacks, Indium Tin Oxide (ITO) capacitive grids, and optical polyimide film.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">South Korea &bull; Japan &bull; Canada</strong>
+                  <p class="origin-geo-desc">
+                    Indium metal and rare transition metal dopants refined in South Korea and Canada. Optical polyimide flexible substrates and display barrier layers formulated by Toray Industries and Mitsui Chemicals in Japan.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Paju, South Korea &bull; LG Display &bull; JDI (Japan)</strong>
+                  <p class="origin-geo-desc">
+                    Sub-pixel fine metal mask (FMM) evaporation, laser encapsulation, and module bonding engineered by LG Display in Paju and Gumi, South Korea, with secondary production lines at Japan Display Inc. (JDI) in Ishikawa and Chiba, Japan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Apple S11 SiP Compute Core -->
+          <article class="origin-card" data-category="silicon" id="origCardS11">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Compute &amp; Neural Engine</span>
+                <h3 class="origin-comp-title">Apple S11 System in Package (SiP)</h3>
+              </div>
+              <span class="origin-recycled-pill">100% Recycled Gold &amp; Tin</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Electronic-grade single-crystal Silicon (99.9999999% purity), 100% certified recycled gold for wire bonding, 100% recycled tin in solder paste, and ultra-dense BT-resin packaging substrate.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Taiwan &bull; Japan &bull; Germany &bull; Certified Recyclers</strong>
+                  <p class="origin-geo-desc">
+                    Polysilicon ingots and ultra-pure 300mm wafer disks sourced from GlobalWafers (Taiwan) and Shin-Etsu Handotai (Japan). Gold and tin are sourced 100% from certified responsible conflict-free recycling refineries worldwide.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Tainan, Taiwan &bull; TSMC &bull; ASE Group (Kaohsiung)</strong>
+                  <p class="origin-geo-desc">
+                    Silicon wafer lithography fabricated by TSMC on an ultra-advanced 3nm process node in Fab 18, Tainan Science Park, Taiwan. Advanced SiP hermetic multi-die packaging, passive SMT placement, and resin molding completed by ASE Group (Kaohsiung, Taiwan) and JCET (Jiangsu, China).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Li-Ion Rechargeable Battery Cell -->
+          <article class="origin-card" data-category="power" id="origCardBattery">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Energy Storage</span>
+                <h3 class="origin-comp-title">Rechargeable Lithium-Ion Battery Pouch</h3>
+              </div>
+              <span class="origin-recycled-pill">100% Recycled Cobalt Cathode</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Lithium Cobalt Oxide (LiCoO₂) cathode with 100% certified recycled cobalt, synthetic graphite anode, copper foil current collectors, and laser-sealed aluminum pouch film.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">China &bull; North America &bull; DRC (Audited)</strong>
+                  <p class="origin-geo-desc">
+                    100% of cobalt in the Series 11 battery cathode comes from certified recycled battery streams in China and North America. Virgin mineral reserves follow 100% third-party audited responsible sourcing in compliance with OECD guidelines.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Shenzhen &amp; Huizhou, China &bull; Sunwoda &bull; Desay</strong>
+                  <p class="origin-geo-desc">
+                    Electrode slurry coating, precision pouch cell stacking, electrolyte filling, ultrasonic foil tab micro-welding, and battery management protection circuit (PCM) integration manufactured by Sunwoda Electronic (Shenzhen) and Huizhou Desay Battery in Guangdong, China.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Taptic Engine & Acoustic Modules -->
+          <article class="origin-card" data-category="power" id="origCardTaptic">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Haptics &amp; Acoustics</span>
+                <h3 class="origin-comp-title">Taptic Engine, Speaker &amp; Rare Earth Magnets</h3>
+              </div>
+              <span class="origin-recycled-pill">100% Recycled Rare Earth Elements</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                100% recycled Neodymium (Nd), Dysprosium (Dy), and Terbium (Tb) permanent magnets (NdFeB), 316L medical stainless steel enclosure, and high-purity oxygen-free copper coils.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">China &bull; Vietnam &bull; Australia (Recycled)</strong>
+                  <p class="origin-geo-desc">
+                    100% of rare earth elements across all magnets in Series 11 are sourced from certified post-consumer and industrial magnet recycling channels in China and Southeast Asia, audited to verify zero virgin mine impact.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Pinghu &amp; Changzhou, China &bull; Nidec &bull; AAC</strong>
+                  <p class="origin-geo-desc">
+                    Micromachined spring suspension, linear magnetic vibrator assembly, and acoustic voice coil transducer packaging engineered by Nidec Corporation (Nagano, Japan / Pinghu, China) and AAC Technologies (Changzhou, Jiangsu, China).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Photoplethysmography (PPG) Optical Bio-Sensors -->
+          <article class="origin-card" data-category="power" id="origCardSensors">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Health Bio-Sensors</span>
+                <h3 class="origin-comp-title">Optical PPG Heart Sensor &amp; ECG Electrodes</h3>
+              </div>
+              <span class="origin-recycled-pill">Medical-Grade Optoelectronics</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Gallium Arsenide (GaAs) infrared, green, and red LED dice, high-responsivity silicon PIN photodiodes, and PVD titanium-chromium ECG electrode rings.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">France &bull; Austria &bull; Singapore &bull; Japan</strong>
+                  <p class="origin-geo-desc">
+                    Epitaxial compound semiconductor wafers and high-sensitivity optical sensor chips refined in state-of-the-art semiconductor cleanrooms in Europe and Singapore.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Singapore &bull; Malaysia &bull; STMicroelectronics &bull; ams OSRAM</strong>
+                  <p class="origin-geo-desc">
+                    Precision bio-optical cluster packaging, optical window hermetic sealing, and micro-photodiode die bonding produced by STMicroelectronics (Crolles, France / Ang Mo Kio, Singapore) and ams OSRAM (Penang, Malaysia / Premstaetten, Austria).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Sport Bands & Fasteners -->
+          <article class="origin-card" data-category="enclosure" id="origCardBands">
+            <div class="origin-card-top">
+              <div class="origin-comp-header">
+                <span class="origin-cat-tag">Straps &amp; Finishes</span>
+                <h3 class="origin-comp-title">Fluoroelastomer Sport Band &amp; Titanium Pin</h3>
+              </div>
+              <span class="origin-recycled-pill">Carbon Neutral Edition</span>
+            </div>
+
+            <div class="origin-materials-block">
+              <span class="origin-label">Key Materials Utilized:</span>
+              <p class="origin-val-text">
+                Custom fluorocarbon synthetic elastomer with recycled fluoro-polymer flakes, precision Grade 5 titanium pin-and-tuck closure stud.
+              </p>
+            </div>
+
+            <div class="origin-dual-columns">
+              <!-- Sourcing -->
+              <div class="origin-column col-sourcing">
+                <div class="origin-col-badge badge-sourcing">
+                  <span class="mini-dot"></span>
+                  <span>Material Sourcing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Japan &bull; United States</strong>
+                  <p class="origin-geo-desc">
+                    Specialized medical-grade fluoropolymer raw base synthesized by chemical partners in Osaka, Japan (Daikin Industries) and the United States (Chemours).
+                  </p>
+                </div>
+              </div>
+
+              <!-- Manufacturing -->
+              <div class="origin-column col-manufacturing">
+                <div class="origin-col-badge badge-manufacturing">
+                  <span class="mini-dot"></span>
+                  <span>Component Manufacturing</span>
+                </div>
+                <div class="origin-col-content">
+                  <strong class="origin-geo-heading">Zhejiang, China &bull; Bac Giang, Vietnam &bull; Luxshare</strong>
+                  <p class="origin-geo-desc">
+                    High-precision compression molding, cryogenic flash deburring, and micro-satin velvet touch finishing performed by Luxshare Precision Industry and partner facilities in Zhejiang, China, and Bac Giang province, Vietnam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Shipping of Parts for Assembly -->
+    <section class="section assembly-shipping-section" id="assembly-shipping">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag">Logistics &amp; Final Assembly Flow</p>
+          <h2 class="section-title">Shipping of Parts for Assembly</h2>
+          <p class="section-desc">
+            How individual micro-components across the globe converge into the final Apple Watch Series 11. Follow the uninterrupted chain from raw mineral extraction through precision parts air freight and cleanroom robotic assembly to worldwide customer delivery.
+          </p>
+        </div>
+
+        <!-- Interactive 5-Stage Step Flow Progress Timeline -->
+        <div class="flow-overview-wrapper">
+          <div class="flow-steps-rail" id="shippingFlowRail" role="tablist" aria-label="5-Stage Assembly and Shipping Flow">
+            <button type="button" class="flow-step-node active" data-step="1" role="tab" aria-selected="true" id="stepNode1">
+              <span class="step-circle">01</span>
+              <span class="step-label">Raw Materials</span>
+            </button>
+            <span class="flow-connector" aria-hidden="true">→</span>
+
+            <button type="button" class="flow-step-node" data-step="2" role="tab" aria-selected="false" id="stepNode2">
+              <span class="step-circle">02</span>
+              <span class="step-label">Component Mfg</span>
+            </button>
+            <span class="flow-connector" aria-hidden="true">→</span>
+
+            <button type="button" class="flow-step-node" data-step="3" role="tab" aria-selected="false" id="stepNode3">
+              <span class="step-circle">03</span>
+              <span class="step-label">Parts Shipping</span>
+            </button>
+            <span class="flow-connector" aria-hidden="true">→</span>
+
+            <button type="button" class="flow-step-node" data-step="4" role="tab" aria-selected="false" id="stepNode4">
+              <span class="step-circle">04</span>
+              <span class="step-label">Final Assembly</span>
+            </button>
+            <span class="flow-connector" aria-hidden="true">→</span>
+
+            <button type="button" class="flow-step-node" data-step="5" role="tab" aria-selected="false" id="stepNode5">
+              <span class="step-circle">05</span>
+              <span class="step-label">Finished Watch</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Active Stage Detail Box -->
+          <div class="active-stage-card" id="activeStageCard">
+            <div class="stage-card-header">
+              <div class="stage-tag-badge" id="stageTagBadge">Phase 01 of 05 &bull; Upstream Sourcing</div>
+              <h3 class="stage-card-title" id="stageCardTitle">Raw Materials: Extraction, Smelting &amp; Refining</h3>
+            </div>
+            <p class="stage-card-desc" id="stageCardDesc">
+              Certified refiners and smelters worldwide process aerospace-grade titanium sponge, high-purity alumina for sapphire crystal synthesis, semiconductor silicon ingots, and 100% recycled cobalt, gold, and rare-earth elements. All smelters and refiners are independently audited against Apple Responsible Sourcing standards.
+            </p>
+            <div class="stage-metrics-row" id="stageMetricsRow">
+              <div class="stage-metric-box">
+                <span class="metric-label">Key Locations</span>
+                <span class="metric-val" id="stageMetricLocs">Japan, USA, Australia, Switzerland</span>
+              </div>
+              <div class="stage-metric-box">
+                <span class="metric-label">Transit Mode</span>
+                <span class="metric-val" id="stageMetricTransit">Consolidated Freight / Bulk Sea</span>
+              </div>
+              <div class="stage-metric-box">
+                <span class="metric-label">Key Deliverable</span>
+                <span class="metric-val" id="stageMetricDeliverable">Refined Ingots, Wafers, Powders</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Global Logistics & Shipping Map Schematic -->
+        <div class="shipping-map-card" id="shippingMapCard">
+          <div class="map-card-header">
+            <div>
+              <span class="block-eyebrow">International Supply Routes</span>
+              <h3 class="map-card-title">Component Transit &amp; Assembly Corridors</h3>
+            </div>
+            <div class="map-quick-stats">
+              <span class="map-stat-pill"><span class="pulse-green"></span> 24-Hour Express Air Freight</span>
+              <span class="map-stat-pill">JIT Logistics &bull; &lt; 48hr Buffer</span>
+            </div>
+          </div>
+
+          <!-- Schematic Logistics Network Grid -->
+          <div class="logistics-corridors-grid">
+            <!-- Hub 1: Taiwan -> Assembly Hubs -->
+            <div class="corridor-card" id="corridorTaiwan">
+              <div class="corridor-badge">Route Alpha</div>
+              <div class="corridor-route">
+                <span class="corridor-from">Taipei / Tainan, Taiwan</span>
+                <span class="corridor-arrow">✈</span>
+                <span class="corridor-to">Zhengzhou &amp; Kunshan, China</span>
+              </div>
+              <h4 class="corridor-part">Apple S11 SiP Processor Modules</h4>
+              <p class="corridor-detail">
+                After TSMC 3nm wafer fabrication and ASE Group hermetic packaging, micro-inspected SiP modules are packed in hermetic Nitrogen-sealed anti-static trays and flown daily via direct cargo charters from Taipei Taoyuan (TPE) to Zhengzhou (CGO) and Shanghai (PVG).
+              </p>
+              <div class="corridor-meta">
+                <span>Mode: Dedicated Air Cargo</span>
+                <span>Transit: 6 to 12 Hours</span>
+              </div>
+            </div>
+
+            <!-- Hub 2: South Korea -> Assembly Hubs -->
+            <div class="corridor-card" id="corridorKorea">
+              <div class="corridor-badge">Route Beta</div>
+              <div class="corridor-route">
+                <span class="corridor-from">Seoul / Paju, South Korea</span>
+                <span class="corridor-arrow">✈</span>
+                <span class="corridor-to">Shenzhen &amp; Bac Giang, Vietnam</span>
+              </div>
+              <h4 class="corridor-part">Wide-Angle LTPO3 OLED Panels</h4>
+              <p class="corridor-detail">
+                LG Display modules are tested for luminance uniformity and edge optical clarity, then packed into shock-absorbing vacuum cassettes and flown from Seoul Incheon (ICN) into Shenzhen (SZX) and Hanoi Noi Bai International (HAN).
+              </p>
+              <div class="corridor-meta">
+                <span>Mode: Shock-Isolated Air Express</span>
+                <span>Transit: 8 to 16 Hours</span>
+              </div>
+            </div>
+
+            <!-- Hub 3: Mainland China Regional Transport -->
+            <div class="corridor-card" id="corridorChina">
+              <div class="corridor-badge">Route Gamma</div>
+              <div class="corridor-route">
+                <span class="corridor-from">Hunan, Huizhou, Changzhou</span>
+                <span class="corridor-arrow">🚚</span>
+                <span class="corridor-to">Foxconn &amp; Luxshare Hubs</span>
+              </div>
+              <h4 class="corridor-part">Sapphire Crystals, Batteries &amp; Taptic Units</h4>
+              <p class="corridor-detail">
+                Lens Technology (Hunan) ships sapphire crystal front lenses, Sunwoda and Desay ship tested lithium pouch batteries, and AAC Technologies ships Taptic resonant motors via climate-controlled bonded intermodal express transport directly to final assembly floors.
+              </p>
+              <div class="corridor-meta">
+                <span>Mode: Climate-Controlled Bonded Trucking</span>
+                <span>Transit: 12 to 24 Hours</span>
+              </div>
+            </div>
+
+            <!-- Hub 4: Southeast Asia & Europe -> Vietnam / China -->
+            <div class="corridor-card" id="corridorSEAsia">
+              <div class="corridor-badge">Route Delta</div>
+              <div class="corridor-route">
+                <span class="corridor-from">Singapore &bull; Malaysia &bull; Europe</span>
+                <span class="corridor-arrow">✈</span>
+                <span class="corridor-to">Bac Giang (Vietnam) &amp; Shenzhen</span>
+              </div>
+              <h4 class="corridor-part">Optical Bio-Sensors &amp; ECG Electrodes</h4>
+              <p class="corridor-detail">
+                STMicroelectronics (Singapore) and ams OSRAM (Malaysia/Austria) air-ship calibrated multi-wavelength photodiode bio-sensor modules into Apple's Southeast Asian assembly center in Bac Giang / Bac Ninh, Vietnam, for direct cleanroom mounting onto rear ceramic backplates.
+              </p>
+              <div class="corridor-meta">
+                <span>Mode: Express Air Freight</span>
+                <span>Transit: 10 to 20 Hours</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Assembly Hubs Deep-Dive -->
+          <div class="assembly-hubs-container">
+            <h4 class="assembly-hubs-title">Major Final Assembly Locations</h4>
+            <div class="assembly-hubs-grid">
+              <!-- Facility 1 -->
+              <div class="assembly-facility-card">
+                <div class="facility-header">
+                  <div class="facility-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="facility-name">Foxconn (Hon Hai Technology Group)</strong>
+                    <span class="facility-location">Zhengzhou &amp; Shenzhen, China</span>
+                  </div>
+                </div>
+                <p class="facility-desc">
+                  Houses ultra-cleanroom robotic assembly lines executing automated surface-mount technology (SMT), sub-micron optical alignment, laser hermetic case sealing, and 100% automated 50-meter water-resistance chamber testing.
+                </p>
+                <div class="facility-badge-strip">
+                  <span class="facility-pill">Zero Waste Certified</span>
+                  <span class="facility-pill">100% Renewable Energy</span>
+                </div>
+              </div>
+
+              <!-- Facility 2 -->
+              <div class="assembly-facility-card">
+                <div class="facility-header">
+                  <div class="facility-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="facility-name">Luxshare Precision Industry</strong>
+                    <span class="facility-location">Kunshan, China &bull; Bac Giang, Vietnam</span>
+                  </div>
+                </div>
+                <p class="facility-desc">
+                  Key partner for final system assembly, sport band integration, and packaging. Luxshare's state-of-the-art facilities in northern Vietnam anchor Apple's dual-hub geographical supply resilience strategy.
+                </p>
+                <div class="facility-badge-strip">
+                  <span class="facility-pill">Dual-Country Footprint</span>
+                  <span class="facility-pill">Automated Testing</span>
+                </div>
+              </div>
+
+              <!-- Facility 3 -->
+              <div class="assembly-facility-card">
+                <div class="facility-header">
+                  <div class="facility-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="facility-name">Compal Electronics</strong>
+                    <span class="facility-location">Kunshan &amp; Chengdu, China</span>
+                  </div>
+                </div>
+                <p class="facility-desc">
+                  Specialized final system integration for select Apple Watch configurations, firmware loading, diagnostic sensor calibration, and worldwide retail carton packaging.
+                </p>
+                <div class="facility-badge-strip">
+                  <span class="facility-pill">Quality Calibration</span>
+                  <span class="facility-pill">Fiber Packaging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outbound Worldwide Fulfillment Stage -->
+          <div class="distribution-outbound-box">
+            <div class="outbound-icon-col">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2997ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div class="outbound-text-col">
+              <h4 class="outbound-title">Direct-to-Consumer &amp; Global Retail Distribution</h4>
+              <p class="outbound-desc">
+                Finished Apple Watches are packed in compact 100% recycled fiber packaging, loaded onto custom pallets designed to maximize aircraft fuselage volume, and flown directly from Zhengzhou, Shanghai, and Hanoi to regional central distribution hubs: <strong>Memphis, Louisville, and Elk Grove (Americas)</strong>, <strong>Eindhoven and Cork (Europe)</strong>, and <strong>Tokyo, Shanghai, and Singapore (Asia-Pacific)</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         1. MANUFACTURING PROCESS SECTION
+    ========================================================= -->
+    <section class="section mfg-section" id="manufacturing">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header mfg-header">
+          <p class="section-tag">End-to-End Production Lifecycle</p>
+          <h2 class="section-title">Manufacturing Process.</h2>
+          <p class="section-desc">
+            The creation of Apple Watch Series 11 follows a rigorous six-stage progression from mineral refining and precision sub-tier foundries to automated cleanroom robotic integration, 100% automated hydrostatic testing, and zero-plastic fiber packaging.
+          </p>
+        </div>
+
+        <!-- Stage Distinction & Transparency Standards Notice -->
+        <div class="mfg-transparency-card">
+          <div class="mfg-transparency-header">
+            <span class="mfg-transparency-badge">Audited Transparency &amp; Sourcing Standards</span>
+            <span class="mfg-transparency-meta">Apple Responsible Sourcing &bull; SEC Form 10-K Disclosures</span>
+          </div>
+          <div class="mfg-transparency-grid">
+            <div class="mfg-transparency-item">
+              <span class="mfg-stage-dot dot-sourcing" aria-hidden="true"></span>
+              <div>
+                <strong>Material Sourcing</strong>
+                <p>Smelting, boule crystallization, and audited 100% recycled feedstock. Primary refiners in Japan, USA, Switzerland, and Australia.</p>
+              </div>
+            </div>
+            <div class="mfg-transparency-item">
+              <span class="mfg-stage-dot dot-production" aria-hidden="true"></span>
+              <div>
+                <strong>Component Production &amp; Processing</strong>
+                <p>Semiconductor foundries, OLED fabs, 5-axis CNC machining, and sapphire polishing in Taiwan, South Korea, France, Germany, and China.</p>
+              </div>
+            </div>
+            <div class="mfg-transparency-item">
+              <span class="mfg-stage-dot dot-assembly" aria-hidden="true"></span>
+              <div>
+                <strong>Assembly, Testing &amp; Packaging</strong>
+                <p>Robotic cleanroom SMT integration, 50m hydrostatic chamber pressure QA, and 100% fiber sealing in China and Vietnam.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mfg-transparency-footnote">
+            <strong>Disclosure Policy:</strong> All locations and Tier-1 manufacturing facilities cited below are verified against Apple's official published Supplier List and environmental progress reports. Proprietary chemical formulations and undisclosed sub-tier mine sites are explicitly labeled as <em>Not Publicly Disclosed</em>.
+          </p>
+        </div>
+
+        <!-- Interactive 6-Stage Timeline Stepper -->
+        <div class="mfg-stepper-container" role="tablist" aria-label="Manufacturing Process Stages">
+          <button class="mfg-stepper-btn active" type="button" role="tab" aria-selected="true" data-mfg-step="1" id="mfgStep1">
+            <span class="mfg-step-num">01</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Raw Materials</span>
+              <span class="mfg-step-sub">Material Sourcing</span>
+            </span>
+          </button>
+          <button class="mfg-stepper-btn" type="button" role="tab" aria-selected="false" data-mfg-step="2" id="mfgStep2">
+            <span class="mfg-step-num">02</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Component Mfg</span>
+              <span class="mfg-step-sub">Subcomponent Fabs</span>
+            </span>
+          </button>
+          <button class="mfg-stepper-btn" type="button" role="tab" aria-selected="false" data-mfg-step="3" id="mfgStep3">
+            <span class="mfg-step-num">03</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Processing</span>
+              <span class="mfg-step-sub">CNC &amp; Polishing</span>
+            </span>
+          </button>
+          <button class="mfg-stepper-btn" type="button" role="tab" aria-selected="false" data-mfg-step="4" id="mfgStep4">
+            <span class="mfg-step-num">04</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Assembly</span>
+              <span class="mfg-step-sub">Robotic Cleanroom</span>
+            </span>
+          </button>
+          <button class="mfg-stepper-btn" type="button" role="tab" aria-selected="false" data-mfg-step="5" id="mfgStep5">
+            <span class="mfg-step-num">05</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Testing</span>
+              <span class="mfg-step-sub">100% Chamber QA</span>
+            </span>
+          </button>
+          <button class="mfg-stepper-btn" type="button" role="tab" aria-selected="false" data-mfg-step="6" id="mfgStep6">
+            <span class="mfg-step-num">06</span>
+            <span class="mfg-step-info">
+              <span class="mfg-step-name">Packaging</span>
+              <span class="mfg-step-sub">100% Fiber Sealing</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Featured Stage Inspector Card (Dynamic) -->
+        <div class="mfg-inspector-card" id="mfgInspectorCard">
+          <div class="mfg-inspector-top">
+            <div class="mfg-inspector-tags">
+              <span class="mfg-tag-badge" id="mfgStageBadge">Stage 01 of 06 &bull; Material Sourcing</span>
+              <span class="mfg-phase-category" id="mfgPhaseCat">Material Sourcing</span>
+            </div>
+            <span class="mfg-audit-status" id="mfgAuditStatus">&check; Verified via Apple Supplier Audit Registry</span>
+          </div>
+
+          <div class="mfg-inspector-main">
+            <div class="mfg-inspector-body">
+              <h3 class="mfg-inspector-title" id="mfgStageTitle">Raw Materials: Extraction, Boule Crystallization &amp; Refining</h3>
+              <p class="mfg-inspector-desc" id="mfgStageDesc">
+                Aerospace-grade Grade 5 titanium sponge and scrap undergo vacuum arc remelting; synthetic sapphire boules are grown in specialized ultra-high-temperature hydrothermal furnaces; electronic-grade silicon boules are drawn; and secondary refiners recover 100% recycled cobalt, gold, and rare earth elements.
+              </p>
+
+              <div class="mfg-metrics-grid">
+                <div class="mfg-metric-cell">
+                  <span class="mfg-metric-label">Specific Documented Locations</span>
+                  <strong class="mfg-metric-val" id="mfgStageLocs">Japan, United States, Switzerland, Australia &amp; China</strong>
+                </div>
+                <div class="mfg-metric-cell">
+                  <span class="mfg-metric-label">Primary Process Operations</span>
+                  <strong class="mfg-metric-val" id="mfgStageOps">Vacuum Arc Remelting, Boule Growth, Recycled Smelting</strong>
+                </div>
+                <div class="mfg-metric-cell">
+                  <span class="mfg-metric-label">Physical Deliverables</span>
+                  <strong class="mfg-metric-val" id="mfgStageDeliverable">Titanium Ingots, Polycrystalline Wafers, Alumina Boules</strong>
+                </div>
+                <div class="mfg-metric-cell">
+                  <span class="mfg-metric-label">Disclosure &amp; Transparency Status</span>
+                  <strong class="mfg-metric-val" id="mfgStageDisclosure">Refiners audited; raw non-recycled quarry sites not publicly disclosed</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- =========================================================
+         2. MARKETING AND DISTRIBUTION SECTION
+    ========================================================= -->
+    <section class="section dist-section" id="distribution">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header dist-header">
+          <p class="section-tag">Global Market Footprint &bull; 175+ Countries</p>
+          <h2 class="section-title">Marketing &amp; Distribution.</h2>
+          <p class="section-desc">
+            Following final assembly and packaging, Apple Watch Series 11 enters a synchronized global distribution network. High-priority air cargo corridors connect assembly hubs directly to regional logistics centers, powering retail flagships, online delivery, and telecom partners worldwide.
+          </p>
+        </div>
+
+        <!-- Suggested Distribution Flow: Finished Watch -> Distribution Network -> Regional Markets -> Customers -->
+        <div class="dist-flow-banner">
+          <div class="dist-flow-title-row">
+            <span class="dist-flow-tag">Global Omnichannel Distribution Pipeline</span>
+            <span class="dist-flow-meta">Direct Factory-to-Market Transit</span>
+          </div>
+
+          <div class="dist-flow-pipeline">
+            <!-- Step 1 -->
+            <div class="dist-pipeline-step">
+              <div class="dist-pipeline-indicator">
+                <span class="dist-pipeline-circle">01</span>
+                <span class="dist-pipeline-line" aria-hidden="true"></span>
+              </div>
+              <div class="dist-pipeline-content">
+                <span class="dist-pipeline-stage">Finished Apple Watch</span>
+                <h5 class="dist-pipeline-name">Factory Outbound</h5>
+                <p class="dist-pipeline-desc">Inspected units cleared through bonded customs at Zhengzhou (CGO), Shanghai (PVG), and Hanoi (HAN) airports.</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="dist-pipeline-step">
+              <div class="dist-pipeline-indicator">
+                <span class="dist-pipeline-circle">02</span>
+                <span class="dist-pipeline-line" aria-hidden="true"></span>
+              </div>
+              <div class="dist-pipeline-content">
+                <span class="dist-pipeline-stage">Distribution Network</span>
+                <h5 class="dist-pipeline-name">Global Air Corridors</h5>
+                <p class="dist-pipeline-desc">Dedicated Boeing 777F &amp; 747-8F air cargo charters with logistics partners (UPS, FedEx, DHL) flying into regional consolidation hubs.</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="dist-pipeline-step">
+              <div class="dist-pipeline-indicator">
+                <span class="dist-pipeline-circle">03</span>
+                <span class="dist-pipeline-line" aria-hidden="true"></span>
+              </div>
+              <div class="dist-pipeline-content">
+                <span class="dist-pipeline-stage">Regional Markets</span>
+                <h5 class="dist-pipeline-name">Central Distribution Depots</h5>
+                <p class="dist-pipeline-desc">Stock routed into major regional fulfillment centers across the Americas, Europe, Greater China, Japan, and Asia-Pacific.</p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="dist-pipeline-step">
+              <div class="dist-pipeline-indicator">
+                <span class="dist-pipeline-circle">04</span>
+              </div>
+              <div class="dist-pipeline-content">
+                <span class="dist-pipeline-stage">Worldwide Customers</span>
+                <h5 class="dist-pipeline-name">Omnichannel Fulfillment</h5>
+                <p class="dist-pipeline-desc">Simultaneous availability via 530+ physical Apple Stores, direct-to-door courier delivery, and certified carrier partners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Map & Regional Distribution Inspector -->
+        <div class="dist-map-showcase">
+          <!-- Region Selection Tabs -->
+          <div class="dist-tabs-row" role="tablist" aria-label="Apple Global Operating Segments">
+            <button class="dist-tab-btn active" type="button" role="tab" aria-selected="true" data-region="americas" id="tabAmericas">
+              Americas
+            </button>
+            <button class="dist-tab-btn" type="button" role="tab" aria-selected="false" data-region="europe" id="tabEurope">
+              Europe
+            </button>
+            <button class="dist-tab-btn" type="button" role="tab" aria-selected="false" data-region="china" id="tabChina">
+              Greater China
+            </button>
+            <button class="dist-tab-btn" type="button" role="tab" aria-selected="false" data-region="japan" id="tabJapan">
+              Japan
+            </button>
+            <button class="dist-tab-btn" type="button" role="tab" aria-selected="false" data-region="apac" id="tabApac">
+              Rest of Asia Pacific
+            </button>
+          </div>
+
+          <div class="dist-map-layout">
+            <!-- Map Stage (Clean Minimalist Interactive Vector World Map) -->
+            <div class="dist-map-stage" id="distMapStage">
+              <div class="dist-map-header-bar">
+                <span class="dist-map-legend-item">
+                  <span class="legend-dot active-dot" aria-hidden="true"></span>
+                  Active Market Region
+                </span>
+                <span class="dist-map-legend-item">
+                  <span class="legend-dot hub-dot" aria-hidden="true"></span>
+                  Major Logistics Gateway
+                </span>
+                <span class="dist-map-hint">Click or hover any region/marker to inspect</span>
+              </div>
+
+              <!-- SVG World Map Container -->
+              <div class="dist-svg-wrapper">
+                <svg viewBox="0 0 1000 500" class="dist-world-svg" id="distWorldSvg" aria-label="Interactive World Map of Apple Watch Distribution">
+                  <defs>
+                    <!-- Background Grid Pattern -->
+                    <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="0.8"/>
+                    </pattern>
+                    <!-- Marker Glow Filter -->
+                    <filter id="hubGlow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+                      <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <!-- Subtle Grid Rect -->
+                  <rect width="1000" height="500" fill="url(#mapGrid)" />
+
+                  <!-- Latitude Equator Line -->
+                  <line x1="0" y1="250" x2="1000" y2="250" stroke="rgba(255, 255, 255, 0.04)" stroke-dasharray="4 6" stroke-width="1"/>
+
+                  <!-- CONTINENTS BASE GEOMETRY -->
+                  <!-- Americas Region Path (North + South America) -->
+                  <g class="map-region-group active-region" data-region="americas" id="geoAmericas" tabindex="0" role="button" aria-label="Americas Market Region">
+                    <!-- North America -->
+                    <path class="map-landmass" d="M 120 70 L 220 50 L 280 75 L 310 110 L 290 140 L 260 160 L 230 180 L 235 220 L 200 240 L 180 230 L 160 210 L 130 180 L 90 140 L 80 100 Z" />
+                    <!-- Central & South America -->
+                    <path class="map-landmass" d="M 230 240 L 270 270 L 320 310 L 330 360 L 300 420 L 280 460 L 260 410 L 240 340 L 225 290 Z" />
+                  </g>
+
+                  <!-- Europe Region Path -->
+                  <g class="map-region-group" data-region="europe" id="geoEurope" tabindex="0" role="button" aria-label="Europe Market Region">
+                    <!-- Continental Europe & British Isles -->
+                    <path class="map-landmass" d="M 460 85 L 530 80 L 560 110 L 540 150 L 510 170 L 470 175 L 455 145 L 445 105 Z" />
+                    <path class="map-landmass" d="M 440 95 L 460 90 L 455 120 L 435 125 Z" />
+                  </g>
+
+                  <!-- Greater China Region Path -->
+                  <g class="map-region-group" data-region="china" id="geoChina" tabindex="0" role="button" aria-label="Greater China Market Region">
+                    <!-- Mainland China, Taiwan & surrounding borders -->
+                    <path class="map-landmass" d="M 680 140 L 780 135 L 820 180 L 810 235 L 750 250 L 700 230 L 670 180 Z" />
+                    <circle cx="820" cy="240" r="6" class="map-landmass" />
+                  </g>
+
+                  <!-- Japan Region Path -->
+                  <g class="map-region-group" data-region="japan" id="geoJapan" tabindex="0" role="button" aria-label="Japan Market Region">
+                    <!-- Japanese Archipelago -->
+                    <path class="map-landmass" d="M 835 155 L 860 175 L 850 205 L 830 215 L 825 185 Z" />
+                  </g>
+
+                  <!-- Rest of Asia Pacific & Oceania Path -->
+                  <g class="map-region-group" data-region="apac" id="geoApac" tabindex="0" role="button" aria-label="Rest of Asia Pacific Market Region">
+                    <!-- India & South Asia -->
+                    <path class="map-landmass" d="M 620 190 L 675 195 L 685 245 L 645 285 L 620 235 Z" />
+                    <!-- Southeast Asia / ASEAN -->
+                    <path class="map-landmass" d="M 720 250 L 760 260 L 775 310 L 740 325 L 715 285 Z" />
+                    <!-- Australia & New Zealand -->
+                    <path class="map-landmass" d="M 780 345 L 870 340 L 890 395 L 860 440 L 795 430 L 770 380 Z" />
+                    <path class="map-landmass" d="M 910 410 L 930 425 L 920 455 L 905 440 Z" />
+                    <!-- Middle East Corridor -->
+                    <path class="map-landmass" d="M 560 185 L 610 190 L 615 240 L 575 255 L 550 220 Z" />
+                  </g>
+
+                  <!-- Africa & Northern Latitudes Base (Neutral Non-Interactive Context) -->
+                  <g class="map-base-context" aria-hidden="true">
+                    <!-- Africa -->
+                    <path class="map-neutral-land" d="M 465 195 L 540 190 L 570 240 L 555 330 L 520 400 L 475 350 L 450 260 Z" />
+                    <!-- Northern Eurasia -->
+                    <path class="map-neutral-land" d="M 570 60 L 780 50 L 880 75 L 840 125 L 690 120 L 565 95 Z" />
+                  </g>
+
+                  <!-- KEY LOGISTICS GATEWAYS & HUB PINS -->
+                  <!-- 1. Americas Gateway: Elk Grove / Memphis (USA) -->
+                  <g class="map-hub-pin active-pin" data-region="americas" transform="translate(195, 160)">
+                    <circle cx="0" cy="0" r="14" class="hub-ripple"/>
+                    <circle cx="0" cy="0" r="5" class="hub-center"/>
+                    <text x="8" y="-8" class="hub-label">Elk Grove / Memphis</text>
+                  </g>
+
+                  <!-- 2. Europe Gateway: Cork / Eindhoven -->
+                  <g class="map-hub-pin" data-region="europe" transform="translate(470, 130)">
+                    <circle cx="0" cy="0" r="14" class="hub-ripple"/>
+                    <circle cx="0" cy="0" r="5" class="hub-center"/>
+                    <text x="8" y="-8" class="hub-label">Cork / Eindhoven</text>
+                  </g>
+
+                  <!-- 3. Greater China Gateway: Shanghai / PVG -->
+                  <g class="map-hub-pin" data-region="china" transform="translate(765, 205)">
+                    <circle cx="0" cy="0" r="14" class="hub-ripple"/>
+                    <circle cx="0" cy="0" r="5" class="hub-center"/>
+                    <text x="8" y="-8" class="hub-label">Shanghai / CGO</text>
+                  </g>
+
+                  <!-- 4. Japan Gateway: Tokyo / Narita -->
+                  <g class="map-hub-pin" data-region="japan" transform="translate(850, 185)">
+                    <circle cx="0" cy="0" r="14" class="hub-ripple"/>
+                    <circle cx="0" cy="0" r="5" class="hub-center"/>
+                    <text x="8" y="-8" class="hub-label">Tokyo / Narita</text>
+                  </g>
+
+                  <!-- 5. Rest of Asia Pacific: Singapore / Sydney -->
+                  <g class="map-hub-pin" data-region="apac" transform="translate(745, 305)">
+                    <circle cx="0" cy="0" r="14" class="hub-ripple"/>
+                    <circle cx="0" cy="0" r="5" class="hub-center"/>
+                    <text x="8" y="-8" class="hub-label">Singapore / Sydney</text>
+                  </g>
+
+                  <!-- Dynamic Air Route Arc (Flight Corridor Visualizer) -->
+                  <path d="M 765 205 Q 480 70 195 160" class="air-corridor-line" id="airCorridorLine" fill="none" stroke-dasharray="6 8"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Regional Information HUD (Dynamic Details Card) -->
+            <div class="dist-info-card" id="distInfoCard">
+              <div class="dist-info-top">
+                <div>
+                  <span class="dist-segment-tag" id="distSegmentTag">Reportable Segment 01 of 05 &bull; Americas</span>
+                  <h3 class="dist-region-name" id="distRegionName">Americas</h3>
+                </div>
+                <span class="dist-badge-live">&check; Active Market Distribution</span>
+              </div>
+
+              <p class="dist-region-overview" id="distRegionOverview">
+                Apple's primary commercial market. Encompassing nationwide retail flagships across the United States, Canada, Mexico, Brazil, and Latin America. Directly connected to international air cargo gateways in Tennessee and California.
+              </p>
+
+              <div class="dist-metrics-list">
+                <div class="dist-metric-box">
+                  <span class="dist-metric-hdr">Documented Distribution Hubs</span>
+                  <p class="dist-metric-val" id="distMetricHubs">
+                    Elk Grove, California (Americas operations); Memphis, Tennessee &amp; Louisville, Kentucky (air express sorting gateways).
+                  </p>
+                </div>
+
+                <div class="dist-metric-box">
+                  <span class="dist-metric-hdr">Primary Marketing &amp; Sales Channels</span>
+                  <p class="dist-metric-val" id="distMetricChannels">
+                    270+ Apple Store architectural flagships, Apple Store Online (same-day courier dispatch in major metros), Tier-1 carriers (Verizon, AT&amp;T, T-Mobile), and Apple Authorized Resellers.
+                  </p>
+                </div>
+
+                <div class="dist-metric-box">
+                  <span class="dist-metric-hdr">Hardware Compliance &amp; Regional Features</span>
+                  <p class="dist-metric-val" id="distMetricFeatures">
+                    FDA 510(k) cleared ECG and Sleep Apnea detection algorithms; North American cellular bands (Bands 2, 4, 5, 12, 13, 25, 26, 66); Apple Card monthly installments.
+                  </p>
+                </div>
+
+                <div class="dist-metric-box">
+                  <span class="dist-metric-hdr">Customer Delivery Transit Timeline</span>
+                  <p class="dist-metric-val" id="distMetricTransit">
+                    Same-day personal pickup in Apple Stores; 1 to 2 business days standard express delivery via domestic courier networks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apple Global Supply Chain Highlights -->
+          <div class="dist-pillars-grid">
+            <div class="dist-pillar-card">
+              <span class="dist-pillar-num">01</span>
+              <h4 class="dist-pillar-title">530+ Physical Apple Stores</h4>
+              <p class="dist-pillar-desc">
+                Architectural flagship stores across 26 countries offering walk-in Personal Setup, Apple Trade In, and instant specialist fitting for band styles and sizes.
+              </p>
+            </div>
+
+            <div class="dist-pillar-card">
+              <span class="dist-pillar-num">02</span>
+              <h4 class="dist-pillar-title">Omnichannel Online &amp; App</h4>
+              <p class="dist-pillar-desc">
+                Direct purchasing via apple.com and the Apple Store app in over 30 languages with personalized laser engraving, custom band pairing, and tracked courier dispatch.
+              </p>
+            </div>
+
+            <div class="dist-pillar-card">
+              <span class="dist-pillar-num">03</span>
+              <h4 class="dist-pillar-title">Carrier &amp; Authorized Partners</h4>
+              <p class="dist-pillar-desc">
+                Worldwide cellular activation with over 100 telecommunication operators providing eSIM instant provisioning and integrated monthly cellular service plans.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT US / MEET THE TEAM SECTION
+         ========================================================= -->
+    <section class="section about-section" id="about">
+      <div class="section-inner">
+        <!-- Section Header -->
+        <div class="section-header about-header">
+          <p class="section-tag">About Us</p>
+          <h2 class="section-title">Meet the Team.</h2>
+          <p class="section-desc">
+            The project team collaborating on research, industrial design analysis, spatial visualization, and interactive development.
+          </p>
+        </div>
+
+        <!-- 5-Member Responsive Grid -->
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="member-card" id="member1">
+            <div class="member-photo-slot">
+                   <img src="public/charmaine.jpg" alt="Member 1" class="member-photo" />
+              <div class="member-photo-placeholder" aria-label="Member 1 Photo Placeholder">
+                <svg class="member-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4 class="member-name">Charmaine Janelle Pascua</h4>
+              <p class="member-role">Member</p>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="member-card" id="member2">
+            <div class="member-photo-slot">
+                   <img src="public/Angelica Alegre.jpg" alt="Member 2" class="member-photo" />
+              <div class="member-photo-placeholder" aria-label="Member 2 Photo Placeholder">
+                <svg class="member-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4 class="member-name">Angelica Alegre</h4>
+              <p class="member-role">Member</p>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="member-card" id="member3">
+            <div class="member-photo-slot">
+                   <img src="public/Janisah Abdulnasser.jpg" alt="Member 3" class="member-photo" />
+              <div class="member-photo-placeholder" aria-label="Member 3 Photo Placeholder">
+                <svg class="member-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4 class="member-name">Janisah Abdulnasser </h4>
+              <p class="member-role">Member</p>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="member-card" id="member4">
+            <div class="member-photo-slot">
+                   <img src="public/Levinia Dela Cruz.jpg" alt="Member 4" class="member-photo" />
+              <div class="member-photo-placeholder" aria-label="Member 4 Photo Placeholder">
+                <svg class="member-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4 class="member-name">Levinia Dela Cruz</h4>
+              <p class="member-role">Member</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-copy">All rights reserved. Designed only for academic purposes.</span>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
